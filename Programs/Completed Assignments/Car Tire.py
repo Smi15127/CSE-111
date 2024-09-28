@@ -31,12 +31,12 @@ TireVolume = round(float((math.pi * (mmWidth ** 2) * AspectRatio * (mmWidth * As
 
 new_data = [current_date, mmWidth, AspectRatio, Diameter, TireVolume]
 
-file = 'c:\\Users\\it_is\\Documents\\School\\Fall 2024\\CSE 111\\Programs\\Volumes.txt' # The filepath of the csv file
+# The filepath of the csv file
+file = 'c:\\Users\\it_is\\Documents\\School\\Fall 2024\\CSE 111\\Programs\\Volumes.txt' 
 
 print("Now opening Volumes.txt") # Lets the user know the file is being opened.
 print()
 
-# Mode for file manipulation can include rwa, or Read, Write, and Append. 
 try:
     with open(file, 'r', newline='') as csvfile:
         csvreader = csv.reader(csvfile)
